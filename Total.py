@@ -2,7 +2,7 @@ import Main
 import serial
 import cv2
 
-c = serial.Serial("COM4", 9600)
+c = serial.Serial("COM4", 9600) #Change first arg for terminal COM
 cap = cv2.VideoCapture(0)
 while True:
     m = serial.read()
