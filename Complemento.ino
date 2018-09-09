@@ -3,8 +3,6 @@ const int Trigger = 2;
 const int Echo = 3; 
 Servo servoMotor;
 void setup() {
-
- pinMode(13, OUTPUT);
  Serial.begin(9600); 
  pinMode(Trigger, OUTPUT); 
  pinMode(Echo, INPUT);  
@@ -28,7 +26,6 @@ void loop() {
  Serial.println(1);
  
  do{
-  Serial.println(111);
   if (Serial.available() > 0) {
     x=Serial.read();
     if (x == 115) { 
